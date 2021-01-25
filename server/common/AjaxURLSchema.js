@@ -1,0 +1,1 @@
+export const ESSAYURL = "http://localhost:7000/api/essay"

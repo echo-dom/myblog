@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html,body{height:100%;width:100%;}
+
+li {
+    list-style: none;
+}
+a,a:link,a:visited,a:hover,a:active{ 
+    text-decoration: none; 
+    color:inherit; 
+}
+.home-header{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 50px;
+    background-color: #fff!important;
+
+}
+
+.app-container{
+    font-family: "Hiragino Sans GB","Helvetica Neue",Helvetica,"PingFang SC","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+   
+}
+// icon
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+
+
+// 导航头
+.header{
+    height: 60px;
+    line-height: 60px;
+    // 
+    img{
+        width: 85px;
+        // float: left;
+    }
+    .head-nav{
+        float: right;
+        li {
+            padding: 0 20px;
+            float: left;
+        }
+        li:hover{
+            color: #66b1ff;
+        }
+    }
+}
+// 无限卡片区
+.infinite-list-wrapper{
+    width: 100%;
+    // 卡片
+    ul .list-item {
+        padding: 25px 20px;
+        margin-bottom: 50px;
+        height: 200px;
+        border: 1px solid  #e6e6e6;
+        border-radius: 5px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        .card-title{
+            color: #808285;
+            font-weight: normal;
+            a {
+                cursor: pointer;
+                
+            }
+            a:hover{
+                color: #409eff;
+            }
+        }
+        // 用户信息区
+        .card-info{
+            color: #b4b4b4;
+            font-size: 12px;
+            margin: 20px 0;
+            height: 20px;
+            li {
+                padding: 0 5px;
+                float: left;
+                
+            }
+        }
+        // 卡片内容区
+        .card-contain{
+            color: #656666;
+            font-size: 16px;
+            line-height: 30px;
+            overflow:hidden; //超出的文本隐藏
+            text-overflow:ellipsis; //溢出用省略号显示
+            display:-webkit-box; //将对象作为弹性伸缩盒子模型显示。
+            -webkit-box-orient:vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+            -webkit-line-clamp:2; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数
+            img {
+                width: 60px;
+            }
+            a {
+                color: #66b1ff;
+            }
+        }
+        .card-tag{
+
+        }
+    }
+}
+// 右侧信息区
+.aside-bar{
+    margin-left: 30px;
+
+// 我的名片
+    .el-form-item{
+        margin: 0;
+        }
+    
+    .my-info,.cloud-tag,.hot-essay{
+        width: 100%;
+        margin-bottom: 60px;
+        border-radius: 5px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        // border: 1px solid  #e6e6e6;
+        
+        .my-info-title,.cloud-tag-title,.hot-essay-title{
+            padding: 20px;
+            font-weight: 600;
+            font-size: 18px;
+            border: 1px solid #ebeef5;
+            i {
+                color: #ff9401;
+            }
+        
+        }
+        .my-info-body,.hot-essay-body,.cloud-tag-body{
+            padding: 0px 20px 5px;
+            font-size: 18px;
+            border: 1px solid #ebeef5;
+            border-top: 0;
+        }
+    }
+    .cloud-tag{
+        .cloud-tags-tag{
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+        }
+    }
+    .hot-essay{
+        .hot-essay-list{
+            padding: 20px 0 0 20px;
+            font-size: 14px;
+            .hot-essay-list-num{
+                color: #66b1ff;
+                font-weight: 700;
+            }
+            span{
+                padding-left: 10px;
+                overflow:hidden; //超出的文本隐藏
+                text-overflow:ellipsis; //溢出用省略号显示
+                // display:-webkit-box; //将对象作为弹性伸缩盒子模型显示。
+                // -webkit-box-orient:vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+                // -webkit-line-clamp:1; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数
+            }
+        }
+    }
+    
+}
+// 社交
+.app-info{
+    padding-left: 10px;
+   
+    .app-hover-img{
+        width: 45px;
+        height: 45px;
+    }
+    .app-QQ,.app-weChat,.app-Github,.app-Email{
+        position: relative;
+    }
+    .app-QQ:hover::after,.app-weChat:hover::after{
+        content:'';
+        width:120px;
+        height:120px;
+        border:5px solid white;
+        position:absolute;
+        top:80px;
+        left:-30px;
+        border-radius: 5px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+    .app-QQ:hover::after{
+        background: url(../images/QQ.jpg) top center;
+        background-size:100% auto;
+    }
+    .app-weChat:hover::after{
+        background: url(../images/myWeChat.jpg) top center;
+        background-size:100% auto;
+    }
+    .app-Github{
+        a {
+            text-decoration:none;
+            color: #66b1ff;
+        }
+    }
+    li{
+        display: inline-block;
+        padding: 10px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+}
+
+
+
+// 自适应布局
+@media only screen and (max-width: 500px) {
+    .app-container{
+        width: 100%;
+    }
+    .aside-bar{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:480px){
+    .app-container{
+        width: 100%;
+    }
+    .aside-bar{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:720px){
+    .app-container{
+        width: 100%;
+    }
+    .aside-bar{
+        margin-left: 0;
+    }
+}
