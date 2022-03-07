@@ -82,6 +82,12 @@ export default {
         // 通过sessionStorage 传送文章id
         let essayObjId = window.sessionStorage.getItem("essayId")
         let essayObj = await this.$axios.post('api/getEssayById',{_id:essayObjId});
+        console.log(essayObj)
+        if (essayObj.data.status === 400) {
+            this.$router.push('/errorPage')
+
+            return 
+        }
         this.essayObj = essayObj.data;
     },
     // 添加文章

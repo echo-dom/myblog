@@ -1,16 +1,24 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+    <div id="app">
+        <!-- 路由占位符 -->
+        <router-view />
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+    export default {
+        name: 'app'
+    }
 </script>
 
 <style>
-html,body{height:100%;width:100%;}
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
 
+    html {
+        font-size: 12px;
+    }
 </style>
